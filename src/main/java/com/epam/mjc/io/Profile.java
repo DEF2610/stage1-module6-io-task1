@@ -12,6 +12,7 @@ public class Profile {
     public Profile() {
 
     }
+
     public Profile(String name, Integer age, String email, Long phone) {
         this.name = name;
         this.age = age;
@@ -79,6 +80,7 @@ public class Profile {
 
     @Override
     public int hashCode() {
+
         return Objects.hash(getName(), getAge(), getEmail(), getPhone());
     }
 }
